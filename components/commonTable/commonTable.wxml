@@ -1,0 +1,9 @@
+<!-- 第一版 -->
+<view class="table">
+  <view class="table-tr" wx:for="{{formData.listRow}}" wx:key="{{index}}">
+    <view class="table-td">{{item.x}}</view>
+    <view class="table-td">{{item.y}}</view>
+    <view class="table-td">{{item.z}}</view>
+    <view class="table-td">{{item.g}}</view>
+  </view>
+</view>

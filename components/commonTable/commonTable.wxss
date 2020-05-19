@@ -1,0 +1,61 @@
+.formContainer {
+  /* width: 90%; */
+  /* border: black solid 1px; */
+  width: 98%;
+  overflow: auto;
+  border: 1rpx solid gray;
+  margin: 0 auto;
+}
+
+.table, .table div {
+  margin: 0 auto;
+}
+.table {
+  /* 这个值指定一个元素定义了一个块级表。因此它定义了一个生成块框的矩形块。相应的html元素是table */
+  display: table;
+  width: 100%;
+  /* 该属性用来决定表格的边框是分开的还是合并的，在分隔模式下，相邻的单元格都拥有独立的边框；
+      在合并模式下，相邻单元格共享边框。 */
+  border-collapse: collapse; 
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.table-tr {
+  /* 这个值指定一个元素是单元格的行，相应的html元素是tr元素 */
+  display: table-row; 
+  height: 92rpx;
+}
+.table-th {
+  /* 这个值指定一个元素表示表中的单个单元格，html元素th和td都属于table-cell元素 */
+  display: table-cell; 
+  font-weight: bold;
+  /* border: 1rpx solid gray; */
+  text-align: center;
+  vertical-align: middle;
+  border-top: 1px solid #E6E6E6;
+}
+.table-td {
+  display: table-cell;
+  /* border: 1rpx solid gray; */
+  text-align: center;
+  vertical-align: middle;
+}
+.table-td:first-child,
+.table-th:first-child {
+  border-left: 1px solid #E6E6E6;
+}
+.table-tr > .table-th,
+.table-tr > .table-td {
+  /* 如果这里不设置一个 min-width，那么会造成分开的表格宽度会不一致 */
+  /* 如果需要验证正点：注释掉 min-width，添加上一个 width即可 */
+  min-width: 150rpx;
+  box-sizing: border-box;
+  border-right: 1px solid #E6E6E6;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.scroll-box {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
